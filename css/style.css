@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', Sans-serif;
+}
+
+html,
+body {
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+.navbar {
+  height: 60px;
+  background-color: white;
+}
+
+.navbar .navbar-brand img {
+  width: 80px;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  opacity: 0.8;
+}
+
+.navbar-nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar .nav-link {
+  color: #525252;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  background-color: #0077b5;
+  color: white;
+}
+
+
+
+
+.home .bg-1 {
+  height: 35rem;
+  background-image: url(../img/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.home .section1 h2 {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.home .section1 h1 {
+  font-weight: 800;
+  font-size: 32px;
+  color: #FFF;
+  font-style: italic;
+}
+
+.home .section1 h1 span {
+  color: #0400BC;
+}
+
+.home .section1 p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.home .section1 .btn {
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #3F3BF8;
+  border: none;
+}
+
+.home .section1 .btn:hover,
+.home .section1 .btn:focus {
+  background-color: white;
+  color: #000;
+}
+
+.home .section1 .banner-img {
+  border-radius: 10px;
+  max-width: 450px;
+}
+
+.home .bg-2 {
+  background-image: url(../img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .section2 .line,
+.home .section3 .line ,
+.home .section4 .line {
+  padding-bottom: 1rem;
+  border-image: linear-gradient(to right, #504DFF, #fff6f6) 1 !important;
+  border-bottom: 3px solid;
+}
+
+.home .section2 h2,
+.home .section3 h2 ,
+.home .section4 h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #3F3F3F;
+}
+
+.home .section2 p,
+.home .section3 p ,
+.home .section4 p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.home .section2 .banner,
+.home .section3 .banner ,
+.home .section4 .banner {
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.home .section3 .text img,
+.home .section4 .text img{
+  width: 50px;
+  object-fit: contain;
+}
+
+.home .section3 .vertical-center ,
+.home .section4 .vertical-center {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.bg-3 {
+  position: relative;
+}
+
+.bg-3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(90deg, #cdd2f0 0%, #d3d8f5 100%);
+  border-radius: 0 0 100% 0px;
+  transform: scaleX(1.2);
+  z-index: -1;
+}
