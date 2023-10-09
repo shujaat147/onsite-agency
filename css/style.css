@@ -10,6 +10,8 @@ body {
   overflow-x: hidden;
 }
 
+/* Navbar Start */
+
 .navbar {
   height: 60px;
   background-color: white;
@@ -37,15 +39,130 @@ body {
   font-weight: 600;
 }
 
+.navbar .highlighter>a,
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
+  background-color: #0077b5;
+  color: white !important;
+}
+
+.navbar .highlight {
+  background-color: #0077b5;
+  color: white !important;
+}
+
+.navbar .dropdown-item:hover {
   background-color: #0077b5;
   color: white;
 }
 
+.navbar .dropdown-toggle::after {
+  display: none;
+}
 
+.navbar .dropdown-menu[data-bs-popper] {
+  margin-top: 0px;
+}
 
+/* Navbar End */
+/* Footer Start */
+.footer {
+  background-image: url(../img/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.footer .icon {
+  display: flex;
+  justify-content: end;
+  mix-blend-mode: screen;
+}
+
+.foot {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.foot ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.foot h2 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.foot a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.foot a:hover {
+  color: #fff;
+}
+
+.foot i {
+  color: lightgray;
+  font-size: 25px;
+  padding: 0px;
+  padding-right: 10px;
+}
+
+.footer .links a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #121212;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer hr {
+  border-top: 3px solid;
+  border-radius: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.footer p {
+  color: #393040;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer .input-group input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.footer .input-group input {
+  background-color: #A9A7E7;
+  border-color: #A9A7E7;
+}
+
+.footer .input-group input,
+.footer .input-group .btn {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer .input-group .btn {
+  background-color: #3F3E3E;
+  border-color: #3F3E3E;
+}
+
+.footer .form-control::placeholder {
+  color: #525252;
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* Footer End */
+
+/* Homepage start */
 .home .bg-1 {
   height: 35rem;
   background-image: url(../img/bg-1.jpg);
@@ -104,7 +221,7 @@ body {
 }
 
 .home .section2 .line,
-.home .section3 .line ,
+.home .section3 .line,
 .home .section4 .line {
   padding-bottom: 1rem;
   border-image: linear-gradient(to right, #504DFF, #fff6f6) 1 !important;
@@ -112,25 +229,25 @@ body {
 }
 
 .home .section2 h2,
-.home .section3 h2 ,
+.home .section3 h2,
 .home .section4 h2 {
   font-size: 30px;
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #3F3F3F;
+  color: #000;
 }
 
 .home .section2 p,
-.home .section3 p ,
+.home .section3 p,
 .home .section4 p {
-  color: #000;
+  color: #3F3F3F;
   font-size: 16px;
   font-weight: 600;
   margin: 0px;
 }
 
 .home .section2 .banner,
-.home .section3 .banner ,
+.home .section3 .banner,
 .home .section4 .banner {
   width: 600px;
   height: auto;
@@ -139,23 +256,23 @@ body {
 }
 
 .home .section3 .text img,
-.home .section4 .text img{
+.home .section4 .text img {
   width: 50px;
   object-fit: contain;
 }
 
-.home .section3 .vertical-center ,
+.home .section3 .vertical-center,
 .home .section4 .vertical-center {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.bg-3 {
+.home .bg-3 {
   position: relative;
 }
 
-.bg-3::before {
+.home .bg-3::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -167,3 +284,142 @@ body {
   transform: scaleX(1.2);
   z-index: -1;
 }
+
+/* Homepage End */
+
+/* Common Banner start */
+#banner .bg-1 {
+  height: 35rem;
+  background-image: url(../img/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#banner h2 {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 600;
+  mix-blend-mode: hard-light;
+}
+
+#banner .pics img {
+  aspect-ratio: 2/2;
+  object-fit: contain;
+  width: 350px;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+  position: absolute;
+}
+
+#banner .pics img:first-of-type {
+  top: 20%;
+}
+
+#banner .pics img:nth-of-type(2) {
+  top: 20%;
+  right: 0;
+}
+
+/* Common banner End */
+
+/* Services Web Development start */
+.services-web-dev .section2 .line ,
+.services-web-dev .section3 .line {
+  padding-bottom: 1rem;
+  border-image: linear-gradient(to right, #504DFF, #fff6f6) 1 !important;
+  border-bottom: 3px solid;
+}
+
+.services-web-dev .section2 h2 ,
+.services-web-dev .section3 h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.services-web-dev .section2 p ,
+.services-web-dev .section3 p {
+  color: #3F3F3F;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.services-web-dev .section2 .banner,
+.services-web-dev .section3 .banner{
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* Services Web Development End */
+
+/* Services Mobile app Development start */
+.services-app-dev .section2 .line ,
+.services-app-dev .section3 .line {
+  padding-bottom: 1rem;
+  border-image: linear-gradient(to right, #504DFF, #fff6f6) 1 !important;
+  border-bottom: 3px solid;
+}
+
+.services-app-dev .section2 h2 ,
+.services-app-dev .section3 h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.services-app-dev .section2 p ,
+.services-app-dev .section3 p {
+  color: #3F3F3F;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.services-app-dev .section2 .banner,
+.services-app-dev .section3 .banner{
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* Services Mobile app Development End*/
+
+/* Services Graphic Design Start*/
+.services-graphic .section2 .line ,
+.services-graphic .section3 .line {
+  padding-bottom: 1rem;
+  border-image: linear-gradient(to right, #504DFF, #fff6f6) 1 !important;
+  border-bottom: 3px solid;
+}
+
+.services-graphic .section2 h2 ,
+.services-graphic .section3 h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.services-graphic .section2 p ,
+.services-graphic .section3 p {
+  color: #3F3F3F;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.services-graphic .section2 .banner,
+.services-graphic .section3 .banner{
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+/* Services Graphic Design End*/
