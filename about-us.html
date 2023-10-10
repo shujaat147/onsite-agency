@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./img/favicon.png" />
   <title>Animation & Graphic Design</title>
+  <link rel="preload" as="image" href="./img/about-banner-1.svg">
+  <link rel="preload" as="image" href="./img/graphic-banner-2.svg">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -13,7 +15,7 @@
 
 </head>
 
-<body class="services-graphic">
+<body class="about-us">
   <nav class="navbar navbar-expand-lg row justify-content-center align-items-center">
     <div class="container-fluid col-10">
       <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
@@ -26,10 +28,10 @@
             <a class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">About Us</a>
+            <a class="nav-link highlight" href="#skills">About Us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle highlight" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Our Services
             </a>
             <ul class="dropdown-menu">
@@ -62,12 +64,12 @@
     <div class="bg-1 row justify-content-center align-items-center">
       <div class="col-lg-12 col-11">
         <div class="pics">
-          <img class="img-fluid" src="./img/graphic-banner-1.svg" alt="banner-1">
+          <img class="img-fluid" src="./img/about-banner-1.svg" alt="banner-1">
           <img class="img-fluid" src="./img/graphic-banner-2.svg" alt="banner-2">
         </div>
         <section class="section1 container">
           <div class="text-center">
-            <h2>Animantions & Graphics Design</h2>
+            <h2>About Us</h2>
           </div>
         </section>
       </div>
@@ -82,11 +84,11 @@
         <section class="section2 container-fluid container-xl">
           <div class="row gx-5 align-items-center">
             <div class="col-md-6 col-12 order-1 order-md-0">
-              <h2 class="line">Meet your innovative needs with the best logo design services</h2>
-              <p>Fulfill your demand for innovation with Onsite Developers' exceptional logo design services. At Onsite Developers, we understand that a logo is not just a visual representation; it's a symbol that encapsulates your brand's essence, values, and identity. Our commitment to excellence and creativity is what sets us apart in the world of logo design.</p>
+              <h2 class="line">Top-notch Solution Providers in the Industry</h2>
+              <p>Are you in need of compelling content to connect with your target audience and effectively convey your business's identity, purpose, and offerings? At Onsite, we offer a comprehensive range of services encompassing Branding, Website Development, Mobile App Development, and much more. Our proficient team is dedicated to optimizing our strategies to deliver precisely tailored content to the right audience at the right moment.</p>
             </div>
             <div class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 order-md-1 mb-3 mb-lg-0">
-              <img class="img-fluid banner" src="./img/graphic-banner-3.png" alt="banner-3">
+              <img class="img-fluid banner" src="./img/about-banner-3.png" alt="banner-3">
             </div>
           </div>
         </section>
@@ -100,15 +102,23 @@
         <section class="section3 container-fluid container-xl">
           <div class="row gx-5 align-items-center">
             <div class="col-md-6 col-12 order-1">
-              <h2 class="line">From Business to an Iconic Brand</h2>
-              <p>Our team of experienced designers is dedicated to crafting unique and impactful logos that resonate with your target audience. We take the time to understand your business, its personality, and the message you want to convey. Whether you're starting from scratch or looking to revamp your existing logo, we have the expertise to bring your vision to life.</p>
+              <h2 class="line">Delivering Excellence in Strategy and Results</h2>
+              <p>We are dedicated to supporting clients with innovative services that add value. Our passion lies in helping businesses, freelancers, and artists build their brand identities. Our vision is to empower motivated entrepreneurs, with a skilled team providing tailored solutions.</p>
               <div class="row mt-3">
-                <a href="" class="btn btn-primary col mx-2 py-2">Get started</a>
-                <a href="" class="btn btn-secondary col mx-2 py-2">See Our Work</a>
+                <ul class="row">
+                  <div class="col">
+                    <li>Best quality</li>
+                    <li>Reasonable Cost</li>
+                  </div>
+                  <div class="col">
+                    <li>Perfect Strategies</li>
+                    <li>Results & Followups</li>
+                  </div>
+                </ul>
               </div>
             </div>
             <div class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 mb-3 mb-lg-0">
-              <img class="img-fluid banner" src="./img/graphic-banner-4.png" alt="banner-4">
+              <img class="img-fluid banner" src="./img/about-banner-4.png" alt="banner-4">
             </div>
           </div>
         </section>
@@ -119,7 +129,7 @@
     <!-- Footer Start -->
     <footer class="footer row justify-content-center pt-5">
       <div class="col-11">
-        <div class="icon mb-5 mt-3">
+        <div class="icon mb-5 mt-3 pb-xxl-5">
           <img width="100" src="./img/icon.png" alt="icon">
         </div>
         <div class="foot mt-5 pt-5 mb-3">
