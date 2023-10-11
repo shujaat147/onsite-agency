@@ -232,7 +232,8 @@ body {
 
 .home .section2 h2,
 .home .section3 h2,
-.home .section4 h2 {
+.home .section4 h2,
+.home .section5 h2 {
   font-size: 30px;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -279,12 +280,34 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 55%;
+  width: 50%;
   height: 100%;
-  background: linear-gradient(90deg, #cdd2f0 0%, #d3d8f5 100%);
+background: linear-gradient(180deg, rgba(92, 117, 248, 0.95) 0%, rgba(0, 28, 173, 0.00) 165.75%);
   border-radius: 0 0 100% 0px;
   transform: scaleX(1.2);
   z-index: -1;
+}
+
+.home .section5 h2 span {
+  color: #0036FF;
+}
+
+.home .section5 img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.home .section5 p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.home .section5 h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
 }
 
 /* Homepage End */
@@ -471,16 +494,34 @@ body {
 }
 
 /* About us End*/
+/* Our work web dev Start*/
+
+.work-web-dev .section2 p {
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.work-web-dev .gy-5 {
+  --bs-gutter-y: 4rem;
+}
+
+.work-web-dev .modal {
+  margin: 0px;
+  padding: 0px;
+}
 
 .work-web-dev .image-wrap {
   padding: 10px;
-  width: 300px;
   height: 500px;
   overflow: hidden;
 }
 
 .work-web-dev .image-wrap img {
   border-radius: 30px;
+  padding: 10px;
+  background-color: #fff6f6;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -493,19 +534,145 @@ body {
   object-position: bottom center;
 }
 
-.work-web-dev .btn-modal{
+.work-web-dev .btn-modal {
   display: flex;
-  justify-content: right;
   margin-right: 5%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
 }
 
-.work-web-dev .btn-close{
+.work-web-dev .btn-close {
   font-size: 20px;
 }
 
-.work-web-dev .btn-close:not(:last-of-type){
-  background: none ;
+.work-web-dev .btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.work-web-dev .btn-close:not(:last-of-type) {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Our work web dev End*/
+/* Our work mobile dev Start*/
+.work-mob-dev .section2 p {
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.work-mob-dev .modal {
+  margin: 0px;
+  padding: 0px;
+}
+
+.work-mob-dev .image-wrap {
+  height: auto;
+  overflow: hidden;
+}
+
+.work-mob-dev .image-wrap img {
+  padding: 10px;
+  background-color: #fff6f6;
+  width: 100%;
+  height: auto;
+  box-shadow: -1px -2px 15px -3px rgb(0 0 0/16%);
+}
+
+.work-mob-dev .btn-modal {
+  display: flex;
+  margin-right: 5%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.work-mob-dev .btn-close {
+  font-size: 20px;
+}
+
+.work-mob-dev .btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.work-mob-dev .btn-close:not(:last-of-type) {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.work-mob-dev .image-modal-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* Our work mobile dev End*/
+/* Our work graphic Start*/
+.work-graphic .section2 p {
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.work-graphic .modal {
+  margin: 0px;
+  padding: 0px;
+}
+
+.work-graphic .image-wrap {
+  height: auto;
+  overflow: hidden;
+}
+
+.work-graphic .image-wrap img {
+  padding: 10px;
+  background-color: #fff6f6;
+  width: 100%;
+  height: 100%;
+  box-shadow: -1px -2px 15px -3px rgb(0 0 0/16%);
+}
+
+.work-graphic .btn-modal {
+  display: flex;
+  margin-right: 5%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.work-graphic .btn-close {
+  font-size: 20px;
+}
+
+.work-graphic .btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.work-graphic .btn-close:not(:last-of-type) {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.work-graphic .image-modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Our work graphic End*/
