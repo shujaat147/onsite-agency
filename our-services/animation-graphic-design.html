@@ -6,6 +6,7 @@
   <link rel="preload" as="image" href="../img/graphic-banner-1.svg">
   <link rel="preload" as="image" href="../img/graphic-banner-2.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="../img/favicon.png" />
   <title>Animation & Graphic Design</title>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -82,11 +83,11 @@
     <div class="col-md-11 col-xl-10 px-4 col-12">
       <section class="section2 container-fluid container-xl">
         <div class="row gx-5 align-items-center">
-          <div class="col-md-6 col-12 order-1 order-md-0">
+          <div data-aos="fade-right" data-aos-offset="100" data-aos-duration="2000" class="col-md-6 col-12 order-1 order-md-0">
             <h2 class="line">Meet your innovative needs with the best logo design services</h2>
             <p>Fulfill your demand for innovation with Onsite Developers' exceptional logo design services. At Onsite Developers, we understand that a logo is not just a visual representation; it's a symbol that encapsulates your brand's essence, values, and identity. Our commitment to excellence and creativity is what sets us apart in the world of logo design.</p>
           </div>
-          <div class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 order-md-1 mb-3 mb-lg-0">
+          <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="2000" class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 order-md-1 mb-3 mb-lg-0">
             <img class="img-fluid banner" src="../img/graphic-banner-3.png" alt="banner-3">
           </div>
         </div>
@@ -100,7 +101,7 @@
     <div class="col-md-11 col-xl-10 px-4 col-12">
       <section class="section3 container-fluid container-xl">
         <div class="row gx-5 align-items-center">
-          <div class="col-md-6 col-12 order-1">
+          <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="2000" class="col-md-6 col-12 order-1">
             <h2 class="line">From Business to an Iconic Brand</h2>
             <p>Our team of experienced designers is dedicated to crafting unique and impactful logos that resonate with your target audience. We take the time to understand your business, its personality, and the message you want to convey. Whether you're starting from scratch or looking to revamp your existing logo, we have the expertise to bring your vision to life.</p>
             <div class="row mt-3">
@@ -108,7 +109,7 @@
               <a href="" class="btn btn-secondary col mx-2 py-2">See Our Work</a>
             </div>
           </div>
-          <div class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 mb-3 mb-lg-0">
+          <div data-aos="fade-right" data-aos-offset="100" data-aos-duration="2000" class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 mb-3 mb-lg-0">
             <img class="img-fluid banner" src="../img/graphic-banner-4.png" alt="banner-4">
           </div>
         </div>
@@ -183,10 +184,47 @@
   </footer>
   <!-- Footer Start -->
 
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../js/header.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
 </body>
 
 </html>

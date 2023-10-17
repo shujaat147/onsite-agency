@@ -6,6 +6,7 @@
   <link rel="preload" as="image" href="./img/about-banner-1.svg">
   <link rel="preload" as="image" href="./img/graphic-banner-2.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="./img/favicon.png" />
   <title>About Us</title>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -82,11 +83,11 @@
     <div class="col-md-11 col-xl-10 px-4 col-12">
       <section class="section2 container-fluid container-xl">
         <div class="row gx-5 align-items-center">
-          <div class="col-md-6 col-12 order-1 order-md-0">
+          <div data-aos="fade-right" data-aos-offset="100" data-aos-duration="2000" class="col-md-6 col-12 order-1 order-md-0">
             <h2 class="line">Top-notch Solution Providers in the Industry</h2>
             <p>Are you in need of compelling content to connect with your target audience and effectively convey your business's identity, purpose, and offerings? At Onsite, we offer a comprehensive range of services encompassing Branding, Website Development, Mobile App Development, and much more. Our proficient team is dedicated to optimizing our strategies to deliver precisely tailored content to the right audience at the right moment.</p>
           </div>
-          <div class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 order-md-1 mb-3 mb-lg-0">
+          <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="2000" class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 order-md-1 mb-3 mb-lg-0">
             <img class="img-fluid banner" src="./img/about-banner-3.png" alt="banner-3">
           </div>
         </div>
@@ -100,7 +101,7 @@
     <div class="col-md-11 col-xl-10 px-4 col-12">
       <section class="section3 container-fluid container-xl">
         <div class="row gx-5 align-items-center">
-          <div class="col-md-6 col-12 order-1">
+          <div data-aos="fade-left" data-aos-offset="100" data-aos-duration="2000" class="col-md-6 col-12 order-1">
             <h2 class="line">Delivering Excellence in Strategy and Results</h2>
             <p>We are dedicated to supporting clients with innovative services that add value. Our passion lies in helping businesses, freelancers, and artists build their brand identities. Our vision is to empower motivated entrepreneurs, with a skilled team providing tailored solutions.</p>
             <div class="row mt-3">
@@ -116,7 +117,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 mb-3 mb-lg-0">
+          <div data-aos="fade-right" data-aos-offset="100" data-aos-duration="2000" class="col-md-6 col-12 d-flex justify-content-center align-items-center order-0 mb-3 mb-lg-0">
             <img class="img-fluid banner" src="./img/about-banner-4.png" alt="banner-4">
           </div>
         </div>
@@ -191,10 +192,47 @@
   </footer>
   <!-- Footer Start -->
 
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+    <div class="snowflake">
+      &#x25CF;
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./js/header.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
 </body>
 
 </html>
