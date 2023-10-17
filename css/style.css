@@ -230,6 +230,12 @@ body {
   .foot {
     grid-template-columns: auto;
   }
+
+  .footer .links {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
 }
 
 /* Footer and navbar End */
@@ -466,6 +472,13 @@ body {
     margin-bottom: 10px;
   }
 
+  .home .section5 .rows-col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
   .home .section5 p {
     font-size: 14px;
   }
@@ -484,6 +497,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  position: relative;
 }
 
 #banner h2 {
@@ -503,12 +517,12 @@ body {
 }
 
 #banner .pics img:first-of-type {
-  top: 20%;
+  top: 15%;
   left: 5%;
 }
 
 #banner .pics img:nth-of-type(2) {
-  top: 20%;
+  top: 15%;
   right: 5%;
 }
 
@@ -608,7 +622,7 @@ body {
     height: 100%;
   }
 
-  .services-web-dev .section3 .btn{
+  .services-web-dev .section3 .btn {
     font-size: 14px;
   }
 }
@@ -647,6 +661,29 @@ body {
   mix-blend-mode: multiply;
 }
 
+@media (max-width: 991.98px) {
+
+  .services-app-dev .section2 h2,
+  .services-app-dev .section3 h2 {
+    font-size: 20px;
+  }
+
+  .services-app-dev .section2 p,
+  .services-app-dev .section3 p {
+    font-size: 14px;
+  }
+
+  .services-app-dev .section2 .banner,
+  .services-app-dev .section3 .banner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .services-app-dev .section3 .btn {
+    font-size: 14px;
+  }
+}
+
 /* Services Mobile app Development End*/
 
 /* Services Graphic Design Start*/
@@ -679,6 +716,29 @@ body {
   height: 400px;
   object-fit: contain;
   mix-blend-mode: multiply;
+}
+
+@media (max-width: 991.98px) {
+
+  .services-graphic .section2 h2,
+  .services-graphic .section3 h2 {
+    font-size: 20px;
+  }
+
+  .services-graphic .section2 p,
+  .services-graphic .section3 p {
+    font-size: 14px;
+  }
+
+  .services-graphic .section2 .banner,
+  .services-graphic .section3 .banner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .services-graphic .section3 .btn {
+    font-size: 14px;
+  }
 }
 
 /* Services Graphic Design End*/
@@ -721,8 +781,33 @@ body {
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: 0% 50%;
-  padding-left: 13%;
-  font-size: 20px;
+  padding-left: 16%;
+  font-size: 16px;
+}
+
+@media (max-width: 991.98px) {
+
+  .about-us .section2 h2,
+  .about-us .section3 h2 {
+    font-size: 20px;
+  }
+
+  .about-us .section2 p,
+  .about-us .section3 p {
+    font-size: 14px;
+  }
+
+  .about-us .section2 .banner,
+  .about-us .section3 .banner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-us .section3 li {
+    background-size: 20px;
+    padding-left: 10%;
+    font-size: 18px;
+  }
 }
 
 /* About us End*/
@@ -730,8 +815,8 @@ body {
 
 .work-web-dev .section2 p {
   color: #000;
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 28px;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -753,7 +838,8 @@ body {
 .work-web-dev .image-wrap img {
   border-radius: 30px;
   padding: 10px;
-  background-color: #fff6f6;
+  background-color: rgb(233, 239, 255, 0.1);
+  border: 1px solid rgba(92, 117, 248, 0.5);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -789,6 +875,26 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+@media (max-width: 991.98px) {
+
+  .work-web-dev .section2 p {
+    font-size: 18px;
+  }
+
+  .work-web-dev .gy-5 {
+    --bs-gutter-y: 1.5rem;
+  }
+
+  .work-web-dev .image-wrap {
+    padding: 15px;
+    height: 600px;
+  }
+
+  .work-web-dev .image-wrap img {
+    padding: 15px;
+  }
 }
 
 /* Our work web dev End*/
@@ -908,3 +1014,140 @@ body {
 }
 
 /* Our work graphic End*/
+
+/* Contact Us End*/
+.contact-us .section2 .line {
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #504DFF;
+}
+
+.contact-us .section2 h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+
+.contact-us .section2 .form-control {
+  border-radius: 10px;
+  padding: 10px;
+  background: #F2F2F2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-us .section2 textarea {
+  resize: none;
+}
+
+.contact-us .section2 .btn{
+  display: block;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact-us .section3 .carousel-inner {
+  height: 20rem;
+}
+
+.contact-us .section3 .carousel-inner img {
+  width: 450px;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.contact-us .section3 .carousel-inner .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us .section3 .carousel-inner h2 {
+  font-weight: 600;
+}
+
+.contact-us .section3 .carousel-inner strong {
+  color: #20cb4c;
+  font-weight: 800;
+}
+
+.contact-us .section3 .carousel-indicators .btns {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: initial;
+  margin: 0px 10px;
+  background-color: gray;
+}
+
+.contact-us .section3 .carousel-indicators {
+  position: initial;
+  margin: 0px;
+}
+
+.contact-us .section3 .carousel-indicators .btns.active {
+  background-color: #20cb4c;
+}
+
+.contact-us .section3 .carousel-control-next,
+.contact-us .section3 .carousel-control-prev {
+  position: initial;
+  margin: 0px;
+  width: auto;
+}
+
+.contact-us .section3 .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(128, 128, 128)' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.contact-us .section3 .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(128, 128, 128)' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.contact-us .section3 .btn {
+  background-color: #20cb4c;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+@media (max-width: 991.98px) {
+  .contact-us .section3 .carousel-inner {
+    height: 100%;
+  }
+
+  .contact-us .section3 .carousel-inner img {
+    width: 400px;
+  }
+
+  .contact-us .section3 .carousel-item .col-lg-6:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-us .section3 .carousel-inner h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contact-us .section3 .carousel-inner p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .contact-us .section3 .btn {
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 8px 20px;
+  }
+}
+
+/* Contact Us End*/
